@@ -1,0 +1,292 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper{
+    width: 90%;
+    margin: 0 auto;
+}
+
+header{
+    width: 100%;
+    height: 100px;
+    background-color: #ea7eea;
+    position: fixed;
+}
+
+.logo{
+    width: 30%;
+    float: left;
+    text-align: left;
+    line-height: 100px;
+}
+
+.logo a{
+    text-decoration: none;
+    font-size: 30px;
+    font-family: garamond, serif;
+    color: white;
+    letter-spacing: 4px;
+}
+
+nav{
+    float: right;
+    line-height: 100px;
+}
+
+nav a{
+    text-decoration: none;
+    font-family: garamond, serif;
+    letter-spacing: 4px;
+    font-size: 30px;
+    color: white;
+    padding: 36px 10px;
+    margin: 0 1px;
+    font-weight: 500;
+}
+
+nav a:hover{
+    background:#e256e3;
+    color: white;
+}
+
+.banner-area{
+    background-image: url(Weezerwonka_Header_pink_chrome.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    top: 100px;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+}
+
+.banner-area h2{
+    padding-top: 8%;
+    font-size: 80px;
+    color: white;
+}
+
+.content-area{
+    position: relative;
+    top: 700px;
+    background-color: black;
+}
+
+.intro{
+    padding-top: 2%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 35px;
+    letter-spacing: 1px;
+    color: white;
+}
+
+.gallery-content-area{
+    width: 100%;
+    position: relative;
+    background: black;
+    top: 100px;
+}
+
+
+.content-area h1{
+    margin: 0;
+    padding: 30px;
+    letter-spacing: 4px;
+    color: white;
+    text-align: center;
+    font-family: garamond, serif;
+}
+
+.content-area p{
+    padding: 30px;
+    letter-spacing: 4px;
+    color: white;
+    font-family: garamond, serif;
+}
+
+.gallery-content-area h1{
+    padding: 30px;
+    letter-spacing: 4px;
+    color: white;
+    font-family: garamond, serif;
+    text-align: center;
+}
+
+.image-grid img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.image-grid {
+    --gap: 200px;
+    --num-cols: 3;
+    --row-height: 400px;
+
+    box-sizing: border-box;
+    padding: var(--gap);
+    
+    display: grid;
+    grid-template-columns: repeat(var(--num-cols), 1fr);
+    grid-auto-rows: var(--row-height);
+    gap: var(--gap);
+    margin: 0 auto;
+    justify-items: center;
+}
+.image-grid > img{
+    width: 130%;
+    height: 130%;
+    object-fit: contain;
+}
+
+.my-button {
+  padding: 10px 20px;
+  background-color: #e256e3;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  float: left;
+}
+
+.my-button:hover {
+  background-color: white;
+  color:  #e256e3;;
+}
+
+.left-container{
+    text-align: left;
+    background-image: url(right_background.png);
+    background-size: cover;
+}
+
+.left-container-short{
+    text-align: left;
+}
+
+.contact-container-services img{
+    float: right;
+    margin: 0;
+    padding: 0;
+    display: block;
+}
+
+.right-container{
+    text-align: right;
+    background-image: url(left_background.png);
+    background-size: cover;
+}
+
+.right-container-short{
+    text-align: right;
+    background-image: url(short_left_background.png);
+    background-size: cover;
+}
+
+.intro h3{
+    margin: 0;
+    padding: 30px;
+    letter-spacing: 4px;
+    color: white;
+    text-align: center;
+    font-family: garamond, serif;
+}
+
+.intro p{
+    padding: 30px;
+    letter-spacing: 4px;
+    color: white;
+    font-family: garamond, serif;
+    
+}
+
+.intro ol{
+    padding: 30px;
+    letter-spacing: 4px;
+    color: white;
+    font-family: garamond, serif;
+    line-height: 90px;
+}
+
+.contact-container-services{
+    text-align: right;
+}
+
+.contact-container-services .my-button{
+float: inline-end;
+}
+
+.contact-container-services .gif{
+    position: absolute;
+    top: 4170px;      /* Adjust as needed */
+    left: 0;        /* Adjust as needed */
+    width: 20%;
+    height: auto;
+    z-index: 2;
+    margin: 0;
+    padding: 0;
+}
+
+.selfie img{
+    width: 50%;
+    height: 50%;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid #e256e3;
+    margin: 0 auto;
+    display: block;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.button-row {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 30px;
+}
+.button-row .my-button {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 50px;
+    padding: 40px 80px;
+    font-family: garamond, serif;
+    letter-spacing: 4px;
+    cursor: pointer;
+}
+
+.button-row a{
+    text-decoration: none;
+    color: white;
+}
+
+.button-row a:hover{
+    color: #e256e3;
+}
+
+.image-grid-banners{
+    --gap: 200px;
+    --num-cols: 2;
+    --row-height: 400px;
+
+    box-sizing: border-box;
+    padding: var(--gap);
+    
+    display: grid;
+    grid-template-columns: repeat(var(--num-cols), 1fr);
+    grid-auto-rows: var(--row-height);
+    gap: var(--gap);
+    margin: 0 auto;
+}
+.image-grid-banners > img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
